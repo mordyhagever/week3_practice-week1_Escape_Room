@@ -1,0 +1,28 @@
+import json
+
+
+def read_books_json():
+    with open("books.json", "r") as file:
+        loads = json.load(file)
+    return loads
+
+
+def add_books_json(dictionary):
+    loads = read_books_json()
+    loads.append(dictionary)
+    with open("books.json", "w") as file:
+        json.dump(loads, file, indent=2)
+    return "Book was added successfully"
+
+def read_room_json():
+    with open("rooms.json", "r") as file:
+        loads = json.load(file)
+    return loads
+
+def add_room_json(dictionary):
+    loads = read_room_json()
+    loads.appends(dictionary)
+    with open("rooms.json", "w") as file:
+        json.dump(loads, file, indent=2)
+    return "Room was added successfully"
+
