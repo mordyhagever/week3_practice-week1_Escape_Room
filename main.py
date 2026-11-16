@@ -1,5 +1,7 @@
 from validations import *
 from rooms_manager import rooms_manager
+from orders_manager import orders_manager
+from reports import reports_manager
 
 def print_main_menu():
     print("""
@@ -17,9 +19,9 @@ def print_main_menu():
 def active1():
     print(rooms_manager())
 def active2():
-    pass
+    print(orders_manager())
 def active3():
-    pass
+    print(reports_manager())
 
 
 
@@ -35,3 +37,4 @@ def main_menu():
         choose = print_main_menu()
     return "progress has finished"
 
+main_menu()

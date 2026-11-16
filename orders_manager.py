@@ -389,7 +389,6 @@ def orders_manager():
         choose = print_orders_menu()
 
     return "Progress has finished, back to main menu"
-print(orders_manager())
 
 
 

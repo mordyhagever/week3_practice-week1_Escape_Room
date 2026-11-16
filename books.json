@@ -91,11 +91,11 @@
     "booking_id": "B009",
     "customer_name": "Mordy",
     "room_id": "R003",
-    "booking_date": "2027-01-01",
-    "start_time": "12:00",
+    "booking_date": "2026-11-16",
+    "start_time": "17:30",
     "players": 4,
     "total_price": 472.0,
     "status": "Cancelled",
-    "cancellation_fee": 0.0
+    "cancellation_fee": 236.0
   }
 ]
