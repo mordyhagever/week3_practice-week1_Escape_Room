@@ -104,3 +104,30 @@ def main_choose_checker(number):
     if number < 1 or number > 4:
         return False
     return True
+
+def check_room_capacity(room_id, players):
+    all_rooms = read_room_json()
+    for room in all_rooms:
+        if room["room_id"] == room_id:
+            if room["max_players"] < players:
+                return False
+            elif room["min_players"] > players:
+                return False
+    return True
+
+def orders_manager_choose_checker(number):
+    if not is_int(number):
+        return False
+    number = int(number)
+    if number < 1 or number > 8:
+        return False
+    return True
+
+def change_booking_choose_checker(number):
+    if not is_int(number):
+        return False
+    number = int(number)
+    if number < 1 or number > 6:
+        return False
+    return True
+

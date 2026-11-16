@@ -14,6 +14,11 @@ def add_books_json(dictionary):
         json.dump(loads, file, indent=2)
     return "Book was added successfully"
 
+def update_all_books_json(new_json):
+    with open("books.json", "w") as file:
+        json.dump(new_json, file, indent=2)
+    return "File updated new json"
+
 def read_room_json():
     with open("rooms.json", "r") as file:
         loads = json.load(file)
