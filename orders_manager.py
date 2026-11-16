@@ -139,6 +139,7 @@ def check_date_time(room_id):
 
 
 
+
 def create_order():
     new_order = {}
     price = 0.0
@@ -227,7 +228,7 @@ def cancel_order():
     for order in all_orders:
         if order["booking_id"] == order_id:
             order["cancellation_fee"] = cancellation_fee
-            order["status"] = "Cancelled"
+            order["status"] = "cancelled"
     update_all_books_json(all_orders)
     return "Order has been cancelled and updated"
 
